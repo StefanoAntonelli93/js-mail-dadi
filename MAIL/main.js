@@ -19,16 +19,29 @@ console.log(emailList.length);
 console.log(emailList);
 
 // // - controllo se la mail dell'utente e nell'array utilizzando ciclo for
+let isValidEmail = false;
 for (let i = 0; i < emailList.length; i++) {
-    if (emailList[i] === emailUser) {
-       console.log('la mail è presente');
-    } else {
-        console.log('la mail non è presente');
+    // check se email e presente
+    if(emailUser === emailList[i]) {
+        isValidEmail = true;
+        break;
     }
 }
-// stampa un messaggio appropriato sull’esito del controllo.
+
+
+// stampa un messaggio appropriato sull’esito del controllo. fuori da ciclo for altrimenti stamperà n volte l'esito (non necessario)
+
+if (isValidEmail === true) {
+   console.log('la mail è presente');
+   alert('accesso autorizzato');
+} else {
+    console.log('la mail non è presente');
+    alert('la mail non è presente');
+}
+
 // // - stampo in console 
 //     se la mail dell'utente è nella lista email allora aggiungo esito positivo
 //     altrimenti aggiungo esito negativo
+
 
 
