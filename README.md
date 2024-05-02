@@ -18,7 +18,17 @@ stampa un messaggio appropriato sull’esito del controllo.
 
 Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+// - definisco una variabile con un valore randomico da 1 a 6 per il giocatore (playerNumber) 
+// - definisco una variabile con un valore randomico da 1 a 6 per il pc (pcNumber) 
+
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+// SE numero giocatore è maggiore di numero pc 
+    -allora giocatore vince
+    ALTRIMENTI 
+    -vince pc
+    
+
 
 
 

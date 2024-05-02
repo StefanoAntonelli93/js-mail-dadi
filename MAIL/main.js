@@ -19,6 +19,7 @@ console.log(emailList.length);
 console.log(emailList);
 
 // // - controllo se la mail dell'utente e nell'array utilizzando ciclo for
+
 let isValidEmail = false;
 for (let i = 0; i < emailList.length; i++) {
     // check se email e presente
